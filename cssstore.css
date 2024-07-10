@@ -1,0 +1,278 @@
+body{
+    background-color: rgb(231, 237, 241);
+    font-size: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.bg-body-tertiary{
+    background-color: rgb(138, 168, 220) !important;
+    
+  
+    
+}
+
+#search{
+    border-color:rgb(138, 168, 220) ;
+    color: black;
+}
+#search:hover{
+    background-color: rgb(182, 212, 246);
+    border-color: azure;
+}
+.sti{
+    font-size: 70%;
+    text-align: center;
+
+}
+#logo{
+    width: 5%;
+    height: 10%;
+}
+#h1{
+    font-size: 1000%;
+    padding-top: 2%;
+    padding-left: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#h3{
+    font-size: 400%;
+    padding-left: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#p{
+    font-size:450%;
+    padding-left: 60%;
+    color: rgb(16, 131, 232);
+    font-family: cursive;
+    padding-top:1%;
+    
+}
+.card-text {
+    font-size: 300%;
+}
+
+#koll {
+    
+    display: grid;
+    place-items: center;
+    grid-template-columns: (auto-fit, minmax(30%,1fr)); /* 3 colonnes pour les cartes */
+    grid-template-rows: repeat (3 ,1fr)  ;
+    gap: 15px; /* Espacement de 20px entre les cartes */
+
+    text-align: center;
+    width: 100%;
+}
+
+.card {
+    width: 60%; /* Assurez-vous que les cartes prennent toute la largeur disponible */
+    height: auto; /* Ajustez la hauteur en fonction du contenu */
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Pour que le contenu à l'intérieur soit bien agencé */
+    justify-content: space-evenly; 
+    padding: 5%; /* Ajoutez un peu de padding à l'intérieur des cartes */
+    
+}
+.card:hover {
+    transform: scale(1.05); /* taille du carte augmentee */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card-img-top {
+    font-size: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#shop {
+    font-size: 250%;
+    color: black;
+    border-color: black;
+}
+
+.btn-outline-success:hover {
+    background-color:rgb(120, 182, 236);
+}
+#p2 ,#p3{
+    font-size:250%;
+    color: rgb(18, 19, 19); 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    
+}
+footer{
+    background-color: rgb(120, 182, 236);
+    margin-top: 30px;
+    height: 100%;
+    position: sticky;
+    bottom: 0px;
+    opacity: 0.7;
+font-weight: bolder;
+}
+footer a{
+    margin-left: 10px;
+}
+footer #p2 i{
+    margin-left: 10px;
+
+}
+.anna{
+    width:100%;
+    height:auto;
+    border-radius: 20%;
+
+}
+.flip-card{
+    width: 60%; /* Assurez-vous que les cartes prennent toute la largeur disponible */
+    height: auto; 
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+   
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .flip-card-front {
+    
+    color: black;
+    
+  }
+  
+  .flip-card-back {
+    background-color:  rgb(138, 168, 220) !important;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 20%;
+
+    
+  }
+  .flip-card-back h1{
+    padding-top: 8%;
+    font-size: 800%;
+    font-family: initial;
+
+  }
+  .flip-card-back p{
+    font-size:600%;
+    
+  }
+  .flip-card-back h1 p{
+    color: beige;
+
+  }
+/* phone screen) */
+@media (max-width: 600px) {
+body{
+    font-size: 30%;
+}
+.anna{
+    width:50%;
+    height:auto;
+    border-radius: 20%;
+
+}
+.card-text{
+    font-size: 200%;
+}
+#h1,#h3{
+    font-size: 200%;
+    padding-left: 1%;
+}
+#h1{
+    padding-top: 3%;
+}
+#p{
+    font-size: 300%;
+}
+#shop {
+    font-size: 180%;
+}
+.card{
+    width: 30%;
+    height: 260px;
+}
+#logo{
+   width: 15%;
+   height: 20%;
+}
+.form-control {
+    width: 50%;
+    height: 40%;
+    text-align: center;
+}
+#p2 ,#p3{
+    font-size:250%;
+    color: rgb(17, 129, 227); 
+    display: flex;
+    justify-content: center;
+    padding-right: 4%;
+    
+}
+}
+/* tablette screen) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .form-control{  
+        width: auto;
+        height: auto;        
+    }
+    #h1{
+        font-size: 900%;
+        padding-top: 2%;
+        padding-left: 20%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #h3{
+        font-size: 300%;
+        padding-left: 30%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
